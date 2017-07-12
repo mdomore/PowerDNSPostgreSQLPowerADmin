@@ -28,10 +28,11 @@ Installation procedure of PowerDNS with backend PostgreSQL and PowerDNS-Admin on
 
 [Load zone from Bind](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#load-zone-from-bind)
 
-[For master server]()
+[For master server](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#for-master-server)
 
-[For slave server]()
+[For slave server](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#for-slave-server)
 
+[Appendix](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#appendix)
 
 ## Install Ubuntu 16.04
 ### Install and upgrade ubuntu

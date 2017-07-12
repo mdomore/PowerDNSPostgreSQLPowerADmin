@@ -3,29 +3,33 @@ Installation procedure of PowerDNS with backend PostgreSQL and PowerDNS-Admin on
 
 ## Table of Contents
 [Install Ubuntu 16.04](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#install-ubuntu-1604)
+
 [Install PowerDNS & PostgreSQL backend](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#install-powerdns--postgresql-backend)
-[Install PostgreSQL](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#install-powerdns--postgresql-backend)
-[Install Powerdns]()
-[Configure PowerDNS & PostgreSQL backend]()
-[Configure PostegreSQL]()
-[Create user]()
-[Create database]()
-[Set password]()
-[Populate database for PowerDNS]()
-[Change authorisation details]()
-[Configure Powerdns]()
-[Restart Services and check status]()
-[Test serveur]()
-[Install WebUi PowerDNS-Admin]()
-[Start the webui with systemd]()
-[Create unit file]()
-[Configure systemd]()
-[Start the service]()
-[Check status of your service]()
-[Access Webui]()
-[Configure Master & Slave for DNS replication]()
+
+[Install PostgreSQL](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#install-postgresql)
+
+[Install Powerdns](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#install-powerdns)
+
+[Configure PowerDNS & PostgreSQL backend](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#configure-powerdns--postgresql-backend)
+
+[Configure PostegreSQL](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#configure-postegresql)
+
+[Restart Services and check status](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#restart-services-and-check-status)
+
+[Test serveur](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#test-serveur)
+
+[Install WebUi PowerDNS-Admin](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#install-webui-powerdns-admin)
+
+[Start the webui with systemd](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#start-the-webui-with-systemd)
+
+[Access Webui](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#access-webui)
+
+[Configure Master & Slave for DNS replication](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#configure-master--slave-for-dns-replication)
+
 [Load zone from Bind]()
+
 [For master server]()
+
 [For slave server]()
 
 
@@ -403,7 +407,7 @@ You can now go to ‘http://<server_ip>:9393’, create a local username and log
 ## Configure Master & Slave for DNS replication
 
 
-## 10 Load zone from Bind
+## Load zone from Bind
 For master server
 Copy all files zone in a directory like /tmp/zones on your PowerDNS server.
 Create a file named ‘data’ with the list of all zones you want to import like :

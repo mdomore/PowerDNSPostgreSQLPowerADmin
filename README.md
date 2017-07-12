@@ -256,10 +256,10 @@ systemctl status pdns
            └─32715 /usr/sbin/pdns_server --guardian=no --daemon=no --disable-syslog --write-pid=no
 ```
 ## Test serveur
+```
 dig chaos txt version.bind @127.0.0.1 +short
 ```
 "PowerDNS Authoritative Server 4.0.4 (built Jun 22 2017 20:08:59 by root@12d54a62098e)"
-```
 
 ## Install WebUi PowerDNS-Admin
 Get source from github

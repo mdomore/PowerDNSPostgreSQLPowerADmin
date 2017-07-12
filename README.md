@@ -26,7 +26,7 @@ Installation procedure of PowerDNS with backend PostgreSQL and PowerDNS-Admin on
 
 [Configure Master & Slave for DNS replication](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#configure-master--slave-for-dns-replication)
 
-[Load zone from Bind]()
+[Load zone from Bind](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#load-zone-from-bind)
 
 [For master server]()
 
@@ -408,7 +408,7 @@ You can now go to ‘http://<server_ip>:9393’, create a local username and log
 
 
 ## Load zone from Bind
-For master server
+### For master server
 Copy all files zone in a directory like /tmp/zones on your PowerDNS server.
 Create a file named ‘data’ with the list of all zones you want to import like :
 zone1
@@ -430,7 +430,7 @@ do
 done < data
 ```
 
-For slave server
+### For slave server
 Create a file named ‘data’ with the list of all zones you want to import like :
 zone1
 zone2

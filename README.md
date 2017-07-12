@@ -2,54 +2,30 @@
 Installation procedure of PowerDNS with backend PostgreSQL and PowerDNS-Admin on Ubuntu 16.04
 
 ## Table of Contents
-[Install Ubuntu 16.04]()
-
-[Install PowerDNS & PostgreSQL backend]()
-
-[Install PostgreSQL]()
-
-[Install Powerdns 4.0.X]()
-
+[Install Ubuntu 16.04](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#install-ubuntu-1604)
+[Install PowerDNS & PostgreSQL backend](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#install-powerdns--postgresql-backend)
+[Install PostgreSQL](https://github.com/mdomore/PowerDNSPostgreSQLPowerADmin/blob/master/README.md#install-powerdns--postgresql-backend)
+[Install Powerdns]()
 [Configure PowerDNS & PostgreSQL backend]()
-
 [Configure PostegreSQL]()
-
 [Create user]()
-
 [Create database]()
-
 [Set password]()
-
 [Populate database for PowerDNS]()
-
 [Change authorisation details]()
-
 [Configure Powerdns]()
-
 [Restart Services and check status]()
-
 [Test serveur]()
-
 [Install WebUi PowerDNS-Admin]()
-
 [Start the webui with systemd]()
-
 [Create unit file]()
-
 [Configure systemd]()
-
 [Start the service]()
-
 [Check status of your service]()
-
 [Access Webui]()
-
 [Configure Master & Slave for DNS replication]()
-
 [Load zone from Bind]()
-
 [For master server]()
-
 [For slave server]()
 
 
@@ -59,11 +35,11 @@ Installation procedure of PowerDNS with backend PostgreSQL and PowerDNS-Admin on
 sudo apt-get update && sudo apt-get upgrade
 ```
 ## Install PowerDNS & PostgreSQL backend
-### Install and upgrade Postgresql
+### Install Postgresql
 ```
 sudo apt-get install postgresql postgresql-contrib
 ```
-### Install and upgrade PowerDNS
+### Install PowerDNS
 Install Powerdns 4.0.X
 You can get info at : https://repo.powerdns.com/
 Create the file '/etc/apt/sources.list.d/pdns.list' with this content:

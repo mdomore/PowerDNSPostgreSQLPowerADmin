@@ -2,55 +2,55 @@
 Installation procedure of PowerDNS with backend PostgreSQL and PowerDNS-Admin on Ubuntu 16.04
 
 ## Table of Contents
-Install Ubuntu 16.04
+[Install Ubuntu 16.04]()
 
-Install PowerDNS & PostgreSQL backend
+[Install PowerDNS & PostgreSQL backend]()
 
-Install PostgreSQL
+[Install PostgreSQL]()
 
-Install Powerdns 4.0.X
+[Install Powerdns 4.0.X]()
 
-Configure PowerDNS & PostgreSQL backend
+[Configure PowerDNS & PostgreSQL backend]()
 
-Configure PostegreSQL
+[Configure PostegreSQL]()
 
-Create user
+[Create user]()
 
-Create database
+[Create database]()
 
-Set password
+[Set password]()
 
-Populate database for PowerDNS
+[Populate database for PowerDNS]()
 
-Change authorisation details
+[Change authorisation details]()
 
-Configure Powerdns
+[Configure Powerdns]()
 
-Restart Services and check status
+[Restart Services and check status]()
 
-Test serveur
+[Test serveur]()
 
-Install WebUi PowerDNS-Admin
+[Install WebUi PowerDNS-Admin]()
 
-Start the webui with systemd
+[Start the webui with systemd]()
 
-Create unit file
+[Create unit file]()
 
-Configure systemd
+[Configure systemd]()
 
-Start the service
+[Start the service]()
 
-Check status of your service
+[Check status of your service]()
 
-Access Webui
+[Access Webui]()
 
-Configure Master & Slave for DNS replication
+[Configure Master & Slave for DNS replication]()
 
-Load zone from Bind
+[Load zone from Bind]()
 
-For master server
+[For master server]()
 
-For slave server
+[For slave server]()
 
 
 ## Install Ubuntu 16.04
@@ -84,7 +84,7 @@ curl https://repo.powerdns.com/FD380FBB-pub.asc | sudo apt-key add - &&
 sudo apt-get update &&
 sudo apt-get install pdns-server pdns-backend-pgsql
 ```
-## 3 Configure PowerDNS & PostgreSQL backend
+## Configure PowerDNS & PostgreSQL backend
 ### Configure PostegreSQL
 
 Create user
@@ -240,7 +240,7 @@ gpgsql-user=pdns
 gpgsql-password=<password>
 ```
 
-## 4 Restart Services and check status
+## Restart Services and check status
 ```
 systemctl restart postgresql
 systemctl restart pdns
@@ -274,13 +274,13 @@ systemctl status pdns
    CGroup: /system.slice/pdns.service
            └─32715 /usr/sbin/pdns_server --guardian=no --daemon=no --disable-syslog --write-pid=no
 ```
-## 5 Test serveur
+## Test serveur
 dig chaos txt version.bind @127.0.0.1 +short
 ```
 "PowerDNS Authoritative Server 4.0.4 (built Jun 22 2017 20:08:59 by root@12d54a62098e)"
 ```
 
-## 6 Install WebUi PowerDNS-Admin
+## Install WebUi PowerDNS-Admin
 Get source from github
 ```
 git clone https://github.com/ngoduykhanh/PowerDNS-Admin.git
@@ -388,7 +388,7 @@ Create database :
 sudo ./create_db.py
 ```
 
-## 7 Start the webui with systemd
+## Start the webui with systemd
 Create unit file
 Create a unit file ‘/lib/systemd/system/powerdnsadmin.service’ with this content :
 ```
@@ -419,11 +419,12 @@ Start the service
 sudo systemctl start powerdnsadmin.service
 ```
 Check status of your service
-## 8 Access Webui
+
+## Access Webui
 To start the webui run the script ‘run.py’
 You can now go to ‘http://<server_ip>:9393’, create a local username and log with it.
 
-## 9 Configure Master & Slave for DNS replication
+## Configure Master & Slave for DNS replication
 
 
 ## 10 Load zone from Bind
@@ -467,16 +468,23 @@ do
   sudo pdnsutil create-slave-zone $file 172.22.0.10
 done < data
 ```
-## 11 Appendix
+## Appendix
 ns1
+
 Create a zone and set it as master
+
 sudo pdnsutil create-zone <zone> <nameserver>
+
 sudo pdnsutil set-kind <zone> master
+
 sudo pdnsutil set-meta <zone> SOA-EDIT-API INCEPTION-INCREMENT
+
 ns2
+
 Create a zone and set it as slave
+
 sudo pdnsutil create-zone <zone> <nameserver>
+
 sudo pdnsutil set-kind <zone> slave
-Login with user pdns
-sudo -u pdns psql
+
 

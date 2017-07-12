@@ -3,30 +3,53 @@ Installation procedure of PowerDNS with backend PostgreSQL and PowerDNS-Admin on
 
 ## Table of Contents
 Install Ubuntu 16.04
+
 Install PowerDNS & PostgreSQL backend
+
 Install PostgreSQL
+
 Install Powerdns 4.0.X
+
 Configure PowerDNS & PostgreSQL backend
+
 Configure PostegreSQL
+
 Create user
+
 Create database
+
 Set password
+
 Populate database for PowerDNS
+
 Change authorisation details
+
 Configure Powerdns
+
 4 Restart Services and check status
+
 5 Test serveur
+
 6 Install WebUi PowerDNS-Admin
+
 7 Start the webui with systemd
+
 Create unit file
+
 Configure systemd
+
 Start the service
+
 Check status of your service
+
 8 Access Webui
-9 How to use PowerDNS
-10 Configure Master & Slave for DNS replication
-11 Load zone from Bind
+
+9 Configure Master & Slave for DNS replication
+
+10 Load zone from Bind
+
 For master server
+
 For slave server
 
 

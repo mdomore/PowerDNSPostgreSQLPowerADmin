@@ -26,13 +26,13 @@ Change authorisation details
 
 Configure Powerdns
 
-4 Restart Services and check status
+Restart Services and check status
 
-5 Test serveur
+Test serveur
 
-6 Install WebUi PowerDNS-Admin
+Install WebUi PowerDNS-Admin
 
-7 Start the webui with systemd
+Start the webui with systemd
 
 Create unit file
 
@@ -42,28 +42,28 @@ Start the service
 
 Check status of your service
 
-8 Access Webui
+Access Webui
 
-9 Configure Master & Slave for DNS replication
+Configure Master & Slave for DNS replication
 
-10 Load zone from Bind
+Load zone from Bind
 
 For master server
 
 For slave server
 
 
-## 1 Install Ubuntu 16.04
+## Install Ubuntu 16.04
 ### Install and upgrade ubuntu
 ```
 sudo apt-get update && sudo apt-get upgrade
 ```
-## 2 Install PowerDNS & PostgreSQL backend
+## Install PowerDNS & PostgreSQL backend
 ### Install and upgrade Postgresql
 ```
 sudo apt-get install postgresql postgresql-contrib
 ```
-
+### Install and upgrade PowerDNS
 Install Powerdns 4.0.X
 You can get info at : https://repo.powerdns.com/
 Create the file '/etc/apt/sources.list.d/pdns.list' with this content:
